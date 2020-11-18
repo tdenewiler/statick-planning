@@ -1,0 +1,24 @@
+*.pyc
+*.swo
+*.swp
+*~
+*.log
+
+statick_output
+statick-output
+
+# from setup.py
+build/
+dist/
+*.egg-info/
+MANIFEST
+Pipfile*
+
+# From tests
+.coverage.*
+.coverage
+.mypy_cache
+.pytest_cache
+.tox
+coverage.xml
+output-*/
