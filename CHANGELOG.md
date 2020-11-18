@@ -22,7 +22,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
   [VAL](https://github.com/KCL-Planning/VAL/tree/master/applications#validate).
   `Validate` is a utility to check the syntax of PDDL files.
   In order to use the tool a domain file is required to have been discovered, and a problem file is optional.
-
-### Fixed
-
-### Removed
