@@ -1,7 +1,6 @@
 # Statick TeX/LaTeX Plugins
 
 ![Unit Tests](https://github.com/tdenewiler/statick-planning/workflows/Unit%20Tests/badge.svg)
-![Black](https://github.com/tdenewiler/statick-planning/workflows/Black%20Formatting/badge.svg)
 [![PyPI version](https://badge.fury.io/py/statick-planning.svg)](https://badge.fury.io/py/statick-planning)
 [![Codecov](https://codecov.io/gh/tdenewiler/statick-planning/branch/master/graphs/badge.svg)](https://codecov.io/gh/tdenewiler/statick-planning/)
 ![Python Versions](https://img.shields.io/pypi/pyversions/statick-planning.svg)
