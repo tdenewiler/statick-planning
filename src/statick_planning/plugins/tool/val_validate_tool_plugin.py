@@ -8,12 +8,12 @@ from statick_tool.package import Package
 from statick_tool.tool_plugin import ToolPlugin
 
 
-class ValidateToolPlugin(ToolPlugin):  # type: ignore
+class ValValidateToolPlugin(ToolPlugin):  # type: ignore
     """Apply Validate tool and gather results."""
 
     def get_name(self) -> str:
         """Get name of tool."""
-        return "validate"
+        return "val_validate"
 
     def gather_args(self, args: argparse.Namespace) -> None:
         """Gather arguments."""

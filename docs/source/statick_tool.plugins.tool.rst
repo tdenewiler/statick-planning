@@ -12,10 +12,10 @@ Module contents
 Submodules
 ----------
 
-statick_tool.plugins.tool.validate_tool_plugin module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+statick_tool.plugins.tool.val_validate_tool_plugin module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. automodule:: statick_tool.plugins.tool.validate_tool_plugin
+.. automodule:: statick_tool.plugins.tool.val_validate_tool_plugin
     :members:
     :undoc-members:
     :show-inheritance:
