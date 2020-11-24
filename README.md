@@ -1,4 +1,4 @@
-# Statick TeX/LaTeX Plugins
+# Statick Planning Plugins
 
 ![Unit Tests](https://github.com/tdenewiler/statick-planning/workflows/Unit%20Tests/badge.svg)
 ![Black](https://github.com/tdenewiler/statick-planning/workflows/Black%20Formatting/badge.svg)
