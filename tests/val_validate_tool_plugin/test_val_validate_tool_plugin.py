@@ -55,7 +55,7 @@ def test_val_validate_tool_plugin_found():
         }
     )
     manager.collectPlugins()
-    # Verify that a plugin's get_name() function returns "validate"
+    # Verify that a plugin's get_name() function returns "val_validate"
     assert any(
         plugin_info.plugin_object.get_name() == "val_validate"
         for plugin_info in manager.getPluginsOfCategory("Tool")
