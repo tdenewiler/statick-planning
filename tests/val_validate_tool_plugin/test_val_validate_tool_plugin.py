@@ -196,7 +196,9 @@ def test_val_validate_tool_plugin_parse_invalid():
     assert not issues
 
 
-@mock.patch("statick_tool.plugins.tool.val_validate_tool_plugin.subprocess.check_output")
+@mock.patch(
+    "statick_tool.plugins.tool.val_validate_tool_plugin.subprocess.check_output"
+)
 def test_val_validate_tool_plugin_scan_calledprocesserror(mock_subprocess_check_output):
     """
     Test what happens when a CalledProcessError is raised (usually means Validate hit an error).
@@ -229,7 +231,9 @@ def test_val_validate_tool_plugin_scan_calledprocesserror(mock_subprocess_check_
     assert issues is None
 
 
-@mock.patch("statick_tool.plugins.tool.val_validate_tool_plugin.subprocess.check_output")
+@mock.patch(
+    "statick_tool.plugins.tool.val_validate_tool_plugin.subprocess.check_output"
+)
 def test_val_validate_tool_plugin_scan_oserror(mock_subprocess_check_output):
     """
     Test what happens when an OSError is raised (usually means Validate doesn't exist).
