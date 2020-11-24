@@ -1,4 +1,4 @@
-# Statick TeX/LaTeX Plugins
+# Statick Planning Plugins
 
 ![Unit Tests](https://github.com/tdenewiler/statick-planning/workflows/Unit%20Tests/badge.svg)
 [![PyPI version](https://badge.fury.io/py/statick-planning.svg)](https://badge.fury.io/py/statick-planning)
