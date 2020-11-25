@@ -14,7 +14,7 @@ This is a set of plugins for [Statick](https://github.com/sscpac/statick) that w
 static analysis on those files.
 
 The current plugins will discover planning files in a project and can be configured to check those files using
-[VAL](https://github.com/KCL-Planning/VAL).
+[Validate](https://github.com/KCL-Planning/VAL).
 Custom exceptions can be applied the same way they are with
 [Statick exceptions](https://github.com/sscpac/statick#exceptions).
 
@@ -26,7 +26,7 @@ The recommended method to install these Statick plugins is via pip:
 
 You can also clone the repository and use it locally.
 
-The [VAL](https://github.com/KCL-Planning/VAL) tool has compilation instructions on their
+The [Validate](https://github.com/KCL-Planning/VAL) tool has compilation instructions on their
 [Github repository](https://github.com/KCL-Planning/VAL#how-to-compile-val).
 The way this tool has been used and tested with Statick is by obtaining the binaries via zip file and putting the
 binaries at `/opt/val/`.
@@ -49,7 +49,7 @@ In that case your directory structure will look like the following:
 To run with the default configuration for the statick-planning tools use:
 
 ```shell <!-- markdownlint-disable MD046 -->
-statick project/ --output-directory output/ --profile planning-profile.yaml --val-bin /opt/val/bin/Validate
+statick project/ --output-directory output/ --profile planning-profile.yaml --validate-bin /opt/val/bin/Validate
 ```
 
 ### Pip Install and Custom Configuration
@@ -68,7 +68,7 @@ This example will have custom exceptions in the project, such that the directory
 For this setup you will run the following:
 
 ```shell <!-- markdownlint-disable MD046 -->
-statick project/ --output-directory output/ --user-paths project/statick-config/ --profile planning-profile.yaml --config planning-config.yaml --val-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
+statick project/ --output-directory output/ --user-paths project/statick-config/ --profile planning-profile.yaml --config planning-config.yaml --validate-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
 ```
 
 ### Source Install and Custom Configuration
@@ -86,7 +86,7 @@ Using the example where we want to override the default exceptions with custom o
 to run would be:
 
 ```shell <!-- markdownlint-disable MD046 -->
-/home/user/statick/statick /home/user/package --output-directory output --user-paths /home/user/statick-planning/,/home/user/statick-planning/src/statick_planning/ --profile planning-profile.yaml --config planning-config.yaml --val-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
+/home/user/statick/statick /home/user/package --output-directory output --user-paths /home/user/statick-planning/,/home/user/statick-planning/src/statick_planning/ --profile planning-profile.yaml --config planning-config.yaml --validate-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
 ```
 
 ## Tests and Contributing
