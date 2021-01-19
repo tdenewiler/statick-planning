@@ -12,6 +12,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Removed
 
+## v0.1.1 - 2021-01-19
+
+### Added
+
+- Use new Statick feature of walking directory structure once per package for discovery phase.
+
+### Changed
+
+- Convert use of print() and show tool output flags to the built-in Python logging module.
+- Rename `val` tool plugin to `val_validate`.
+  This matches the actual utility name, and provides room to add other utilities from the VAL project.
+
 ## v0.1.0 - 2020-11-18
 
 ### Added
