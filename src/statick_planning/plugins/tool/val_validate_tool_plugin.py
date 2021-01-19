@@ -1,6 +1,6 @@
 """Apply Validate tool and gather results."""
-import logging
 import argparse
+import logging
 import subprocess
 from typing import List, Optional
 
