@@ -3,5 +3,5 @@ levels:
     discovery:
       - pddl
     tool:
-      val:
+      val_validate:
         flags: ""
