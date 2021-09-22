@@ -12,6 +12,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Removed
 
+## v0.1.2 - 2021-09-22
+
+### Added
+
+- Add testing support for Python 3.10.
+- Add weekly scheduled test actions to identify issues on a consistent basis.
+  This will catch bugs related to updated dependencies when the code is not modified.
+
+### Fixed
+
+- Fixed a bug in the stock planning configuration file.
+  The name of the tool plugin in the configuration file was not updated to reflect the renamed plugin.
+- Fixed pylint warnings related to using the open call without specifying an encoding.
+
+### Removed
+
+- No longer supporting Ubuntu 16.04.
+- No longer supporting Python 3.5.
+
 ## v0.1.1 - 2021-01-19
 
 ### Added
