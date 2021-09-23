@@ -43,8 +43,11 @@ jobs:
         if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
         run: |
           git clone https://github.com/KCL-Planning/VAL
-          cd VAL
-          sudo sh scripts/linux/build_linux_windows.sh
+          cd VAL/scripts/linux
+          sh build_linux64.sh
+          cd ../../build/linux64/Release/install/bin
+          sudo cp Parser /usr/bin
+          sudo cp Validate /usr/bin
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
       - name: Install node
