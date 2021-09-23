@@ -44,7 +44,7 @@ jobs:
         run: |
           git clone https://github.com/KCL-Planning/VAL
           cd VAL/scripts/linux
-          sh build_linux64.sh
+          sh build_linux64.sh all Release
           cd ../../build/linux64/Release/install/bin
           sudo cp Parser /usr/bin
           sudo cp Validate /usr/bin
