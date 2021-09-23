@@ -48,6 +48,8 @@ jobs:
           cd ../../build/linux64/Release/install/bin
           sudo cp Parser /usr/bin
           sudo cp Validate /usr/bin
+          cd ../../../../../../
+          rm -rf VAL
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
       - name: Install node
