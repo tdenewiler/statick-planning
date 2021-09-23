@@ -47,8 +47,7 @@ jobs:
           sh build_linux64.sh all Release
           cd ../../build/linux64/Release/install/bin
           mkdir -p /opt/val/bin/
-          cp Parser /opt/val/bin/
-          cp Validate /opt/val/bin/
+          cp -r * /opt/val/bin/
           cd ../../../../../../
           rm -rf VAL
           ls -lh /opt/val/bin/
