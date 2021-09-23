@@ -1,4 +1,14 @@
-"""Apply VAL Validate tool and gather results."""
+"""Apply VAL Validate tool and gather results.
+
+Tool is from King's College London. Tool authors are:
+
+- Maria Fox and Derek Long - PDDL2.2 and VAL
+- Richard Howey - PDDL2.2 and VAL and Continuous Effects, derived predicates,
+  timed initial literals and LaTeX report in VAL
+- Stephen Cresswell - PDDL2.2 Parser
+
+https://github.com/KCL-Planning/VAL/tree/master/applications#validate
+"""
 import argparse
 import logging
 import subprocess
