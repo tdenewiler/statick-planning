@@ -50,8 +50,6 @@ jobs:
           cp -r * /opt/val/bin/
           cd ../../../../../../
           rm -rf VAL
-          ls -lh /opt/val/bin/
-          /opt/val/bin/Validate
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
       - name: Install node
