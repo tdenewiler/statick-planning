@@ -114,6 +114,7 @@ def test_val_parser_tool_plugin_scan_find_errors():
     ]
     issues = vtp.scan(package, "level")
     assert len(issues) == 7
+
     assert issues[0].filename == os.path.join(
         os.path.dirname(__file__), "error_package", "domain.pddl"
     )
@@ -122,6 +123,7 @@ def test_val_parser_tool_plugin_scan_find_errors():
     assert issues[0].issue_type == "PDDL"
     assert issues[0].severity == "5"
     assert issues[0].message == "Syntax error in domain"
+
     assert issues[1].filename == os.path.join(
         os.path.dirname(__file__), "error_package", "problem.pddl"
     )
@@ -130,6 +132,7 @@ def test_val_parser_tool_plugin_scan_find_errors():
     assert issues[1].issue_type == "PDDL"
     assert issues[1].severity == "3"
     assert issues[1].message == "Undeclared symbol: room"
+
     assert issues[2].filename == os.path.join(
         os.path.dirname(__file__), "error_package", "problem.pddl"
     )
