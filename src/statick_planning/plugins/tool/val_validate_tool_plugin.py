@@ -1,4 +1,4 @@
-"""Apply Validate tool and gather results."""
+"""Apply VAL Validate tool and gather results."""
 import argparse
 import logging
 import subprocess
@@ -19,7 +19,10 @@ class ValValidateToolPlugin(ToolPlugin):  # type: ignore
     def gather_args(self, args: argparse.Namespace) -> None:
         """Gather arguments."""
         args.add_argument(
-            "--validate-bin", dest="validate_bin", type=str, help="Validate binary path"
+            "--val-validate-bin",
+            dest="val_validate_bin",
+            type=str,
+            help="VAL Validate binary path",
         )
 
     def scan(self, package: Package, level: str) -> Optional[List[Issue]]:
@@ -31,8 +34,8 @@ class ValValidateToolPlugin(ToolPlugin):  # type: ignore
         flags += self.get_user_flags(level)
 
         validate_bin = "Validate"
-        if self.plugin_context.args.validate_bin is not None:
-            validate_bin = self.plugin_context.args.validate_bin
+        if self.plugin_context.args.val_validate_bin is not None:
+            validate_bin = self.plugin_context.args.val_validate_bin
 
         try:
             subproc_args = (
@@ -48,7 +51,7 @@ class ValValidateToolPlugin(ToolPlugin):  # type: ignore
         except subprocess.CalledProcessError as ex:
             output = ex.output
             if ex.returncode != 255:
-                logging.warning("Validate failed! Returncode = %d", ex.returncode)
+                logging.warning("VAL Validate failed! Returncode = %d", ex.returncode)
                 logging.warning("%s exception: %s", self.get_name(), ex.output)
                 return None
 
