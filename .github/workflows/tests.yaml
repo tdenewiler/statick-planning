@@ -45,10 +45,9 @@ jobs:
           git clone https://github.com/KCL-Planning/VAL
           cd VAL/scripts/linux
           sh build_linux64.sh all Release
-          cd ../../build/linux64/Release/install/bin
+          cd ../../..
           mkdir -p /opt/val/bin/
-          cp -r * /opt/val/bin/
-          cd ../../../../../../
+          cp -r build/linux64/Release/install/bin/* /opt/val/bin/
           rm -rf VAL
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
