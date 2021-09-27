@@ -54,8 +54,8 @@ statick project/ --output-directory output/ --profile planning-profile.yaml --va
 
 ### Pip Install and Custom Configuration
 
-There are times when you will want to have a custom Statick configuration.
-This is usually done to run a different set of tools than are called out in the default profile, or to add exceptions.
+At times you will want to have a custom Statick configuration.
+Typically, this is to run a different set of tools than used in the default profile, or to add exceptions.
 For this case you will have to add the new Statick configuration somewhere.
 This example will have custom exceptions in the project, such that the directory structure is:
 
@@ -68,12 +68,12 @@ This example will have custom exceptions in the project, such that the directory
 For this setup you will run the following:
 
 ```shell <!-- markdownlint-disable MD046 -->
-statick project/ --output-directory output/ --user-paths project/statick-config/ --profile planning-profile.yaml --config planning-config.yaml --validate-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
+statick project/ --output-directory output/ --user-paths project/statick-config/ --profile planning-profile.yaml --config planning-config.yaml --val-validate-bin /opt/val/bin/Validate <!-- markdownlint-disable MD013 -->
 ```
 
 ### Source Install and Custom Configuration
 
-The last type of setup will be to have all of the tools available from cloning repositories, not installing from pip.
+Another setup will be to have all the tools available from cloning repositories, not installing from pip.
 The directory structure will look like:
 
 - /home/user
