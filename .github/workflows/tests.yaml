@@ -47,7 +47,7 @@ jobs:
           sh build_linux64.sh all Release
           cd ../../..
           mkdir -p /opt/val/bin/
-          cp -r build/linux64/Release/install/bin/* /opt/val/bin/
+          cp -r VAL/build/linux64/Release/install/bin/* /opt/val/bin/
           rm -rf VAL
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
