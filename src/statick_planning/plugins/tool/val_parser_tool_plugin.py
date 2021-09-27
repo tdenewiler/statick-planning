@@ -81,7 +81,6 @@ class ValParserToolPlugin(ToolPlugin):  # type: ignore
 
     def parse_output(self, output: str) -> List[Issue]:
         """Parse tool output and report issues."""
-        # tool_re = r"(.+):\s(.+):\s(\d):\s(.+):\s(.+)"  # type: str
         tool_re = r"(.+):\s(.+):\s(.+):\s(.+):\s(.+)\s(.+)"  # type: str
         parse = re.compile(tool_re)  # type: Pattern[str]
         issues = []
