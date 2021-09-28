@@ -42,8 +42,13 @@ jobs:
       - name: Install tools (Linux)
         if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
         run: |
-          sudo apt update
-          sudo apt install shellcheck
+          git clone https://github.com/KCL-Planning/VAL
+          cd VAL/scripts/linux
+          sh build_linux64.sh all Release
+          cd ../../..
+          mkdir -p /opt/val/bin/
+          cp -r VAL/build/linux64/Release/install/bin/* /opt/val/bin/
+          rm -rf VAL
 
       # Have to install newer version from non-apt source due to SSL library compatibility issues.
       - name: Install node
@@ -78,7 +83,7 @@ jobs:
           python -m tox
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
         with:
           fail_ci_if_error: true
 
