@@ -75,9 +75,7 @@ class ValValidateToolPlugin(ToolPlugin):  # type: ignore
             with open(self.get_name() + ".log", "w", encoding="utf-8") as fid:
                 fid.write(output)
 
-        issues: List[Issue] = self.parse_output(
-            output, package["pddl_domain_src"][0]
-        )
+        issues: List[Issue] = self.parse_output(output, package["pddl_domain_src"][0])
         return issues
 
     def parse_output(self, output: str, filename: str) -> List[Issue]:
