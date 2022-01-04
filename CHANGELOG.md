@@ -12,6 +12,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Removed
 
+## v0.1.3
+
+### Added
+
+- Add Python 3.10 support.
+- Add plugin for VAL Parser tool from King's College London.
+- Switch type hints from comment style to inline style.
+- Switch workflow testing from local installed Statick to
+  [Statick GitHub Action](https://github.com/sscpac/statick-action).
+
+### Fixed
+
+- Use quotes for version numbers in YAML to avoid truncating trailing zeros.
+- Do not fail workflow if Codecov results are not uploaded successfully.
+  That step is too brittle and fails intermittently.
+
 ## v0.1.2 - 2021-09-22
 
 ### Added
