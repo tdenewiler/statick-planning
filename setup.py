@@ -20,7 +20,7 @@ setup(
     author="Thomas Denewiler",
     name="statick-planning",
     description="Statick analysis plugins for planning files.",
-    version="0.1.3",
+    version="0.2.0",
     packages=[
         "statick_tool",
         "statick_tool.plugins.discovery",
