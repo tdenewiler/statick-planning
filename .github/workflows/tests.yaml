@@ -53,7 +53,7 @@ jobs:
 
       - name: Statick Markdown
         if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
-        uses: sscpac/statick-action@main
+        uses: sscpac/statick-action@v0.0.2
         with:
           profile: documentation.yaml
 
@@ -74,6 +74,6 @@ jobs:
 
       - name: Statick
         if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
-        uses: sscpac/statick-action@main
+        uses: sscpac/statick-action@v0.0.2
         with:
           profile: self_check.yaml
