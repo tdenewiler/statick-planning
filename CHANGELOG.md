@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Unreleased
 
-## Changed
+### Added
+
+### Changed
+
+### Fixed
+
+## v0.2.1 - 2022-10-10
+
+### Changed
 
 - Updated tool plugins to match new structure introduced in sscpac/statick#423.
 
