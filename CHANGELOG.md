@@ -6,11 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Unreleased
 
-### Added
+### Removed
 
-### Changed
-
-### Fixed
+- Removed deprecated pypi package [codecov](https://github.com/codecov/codecov-python) from Tox configuration. (#74)
+  Discussion at: <https://community.codecov.com/t/codecov-yanked-from-pypi-all-versions/4259>.
 
 ## v0.2.1 - 2022-10-10
 

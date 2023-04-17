@@ -14,8 +14,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-18.04, ubuntu-20.04, windows-latest]
-        python-version: ['3.7', '3.8', '3.9', '3.10']
+        os: [macos-latest, ubuntu-20.04, ubuntu-22.04, windows-latest]
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11']
 
     steps:
       - uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Install tools (Linux)
-        if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
+        if: matrix.os == 'ubuntu-20.04' || matrix.os == 'ubuntu-22.04'
         run: |
           git clone https://github.com/KCL-Planning/VAL
           cd VAL/scripts/linux
@@ -52,13 +52,13 @@ jobs:
           mypy --ignore-missing-imports --strict src/
 
       - name: Statick Markdown
-        if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
+        if: matrix.os == 'ubuntu-20.04' || matrix.os == 'ubuntu-22.04'
         uses: sscpac/statick-action@v0.0.2
         with:
           profile: documentation.yaml
 
       - name: Sphinx lint
-        if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
+        if: matrix.os == 'ubuntu-20.04' || matrix.os == 'ubuntu-22.04'
         uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: 'docs/'
@@ -73,7 +73,7 @@ jobs:
           fail_ci_if_error: false
 
       - name: Statick
-        if: matrix.os == 'ubuntu-18.04' || matrix.os == 'ubuntu-20.04'
+        if: matrix.os == 'ubuntu-20.04' || matrix.os == 'ubuntu-22.04'
         uses: sscpac/statick-action@v0.0.2
         with:
           profile: self_check.yaml
