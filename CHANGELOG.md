@@ -6,8 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Unreleased
 
+## v0.2.2 - 2023-06-21
+
+### Changed
+
+- Run deployment actions on ubuntu-latest.
+- Make setup.py and tox.ini consistent with supported versions.
+- Update versions of actions to use only tags.
+- Unpin sphinx dependency used when building documentation.
+
 ### Removed
 
+- Drop support for Python 3.7 due to end-of-life on 27 June 2023.
 - Removed deprecated pypi package [codecov](https://github.com/codecov/codecov-python) from Tox configuration. (#74)
   Discussion at: <https://community.codecov.com/t/codecov-yanked-from-pypi-all-versions/4259>.
 
