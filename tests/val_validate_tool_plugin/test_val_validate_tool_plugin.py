@@ -83,6 +83,13 @@ def test_val_validate_tool_plugin_scan_valid():
     issues = vtp.scan(package, "level")
     assert not issues
 
+    try:
+        os.remove(os.path.join(os.getcwd(), "val_validate.log"))
+    except FileNotFoundError as ex:
+        print(f"Error: {ex}")
+    except OSError as ex:
+        print(f"Error: {ex}")
+
 
 def test_val_validate_tool_plugin_no_sources():
     """Make sure no issues are found if no sources are provided.
@@ -101,6 +108,13 @@ def test_val_validate_tool_plugin_no_sources():
     package["pddl_domain_src"] = []
     issues = vtp.scan(package, "level")
     assert not issues
+
+    try:
+        os.remove(os.path.join(os.getcwd(), "val_validate.log"))
+    except FileNotFoundError as ex:
+        print(f"Error: {ex}")
+    except OSError as ex:
+        print(f"Error: {ex}")
 
 
 def test_val_validate_tool_plugin_scan_wrong_binary():
@@ -121,6 +135,13 @@ def test_val_validate_tool_plugin_scan_wrong_binary():
     ]
     issues = vtp.scan(package, "level")
     assert issues is None
+
+    try:
+        os.remove(os.path.join(os.getcwd(), "val_validate.log"))
+    except FileNotFoundError as ex:
+        print(f"Error: {ex}")
+    except OSError as ex:
+        print(f"Error: {ex}")
 
 
 def test_val_validate_tool_plugin_parse_valid():
@@ -219,6 +240,13 @@ def test_val_validate_tool_plugin_scan_calledprocesserror(mock_subprocess_check_
     issues = vtp.scan(package, "level")
     assert issues is None
 
+    try:
+        os.remove(os.path.join(os.getcwd(), "val_validate.log"))
+    except FileNotFoundError as ex:
+        print(f"Error: {ex}")
+    except OSError as ex:
+        print(f"Error: {ex}")
+
 
 @mock.patch(
     "statick_tool.plugins.tool.val_validate.subprocess.check_output"
@@ -247,3 +275,10 @@ def test_val_validate_tool_plugin_scan_oserror(mock_subprocess_check_output):
     ]
     issues = vtp.scan(package, "level")
     assert issues is None
+
+    try:
+        os.remove(os.path.join(os.getcwd(), "val_validate.log"))
+    except FileNotFoundError as ex:
+        print(f"Error: {ex}")
+    except OSError as ex:
+        print(f"Error: {ex}")
