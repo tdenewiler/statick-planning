@@ -5,6 +5,7 @@ import sys
 
 from statick_tool.exceptions import Exceptions
 from statick_tool.package import Package
+
 from statick_tool.plugins.discovery.pddl import PDDLDiscoveryPlugin
 
 if sys.version_info < (3, 10):
