@@ -12,10 +12,10 @@ Module contents
 Submodules
 ----------
 
-statick_tool.plugins.discovery.pddl_discovery_plugin module
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+statick_tool.plugins.discovery.pddl module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. automodule:: statick_tool.plugins.discovery.pddl_discovery_plugin
+.. automodule:: statick_tool.plugins.discovery.pddl
     :members:
     :undoc-members:
     :show-inheritance:
