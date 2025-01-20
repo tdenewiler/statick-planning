@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "statick-planning"
 authors = [{name = "NIWC Pacific"}]
 description="Statick analysis plugins for planning files."
-version = "0.2.2"
+version = "0.3.0"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "CC0-1.0"}
