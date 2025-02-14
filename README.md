@@ -18,6 +18,11 @@ The current plugins will discover planning files in a project and can be configu
 Custom exceptions can be applied the same way they are with
 [Statick exceptions](https://github.com/sscpac/statick#exceptions).
 
+## Deprecated
+
+This set of plugins was merged into the main [Statick] repository and Python package.
+All future development will happen in that repository.
+
 ## Installation
 
 The recommended method to install these Statick plugins is via pip:
